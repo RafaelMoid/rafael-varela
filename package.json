@@ -1,5 +1,5 @@
 {
-  "name": "dev-rafael-varela",
+  "name": "rafael",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,10 +11,15 @@
   "dependencies": {
     "next": "12.2.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.2"
-  }
+  },
+  "main": "index.js",
+  "author": "Rafael Varela <rafaelvrcr@gmail.com>",
+  "license": "MIT",
+  "description": "my personal website"
 }
