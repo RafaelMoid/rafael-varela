@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import { backgroundColor, terciaryColor } from "../UI/variables";
 
-const StyledHeader = styled.nav`
+const StyledHeader = styled.header`
     background-color: ${backgroundColor};
     display: flex;
     justify-content: space-between;
@@ -12,15 +12,19 @@ const StyledHeader = styled.nav`
     border-bottom: 4px solid var ${terciaryColor};
 `;
 
-export const Header = () => {
+
+
+const Header = () => {
     return (
         <StyledHeader>
             <a href="" rel="home">Rafael Varela</a>
             <nav>
                 <a href="" >About me</a>
                 <a href="" >My projects</a>
-                <a href="" >let`&lsquo;`s work together</a>
+                <a href="" >Contact me</a>
             </nav>
         </StyledHeader>
     );
 };
+
+export default Header;
