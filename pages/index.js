@@ -12,9 +12,15 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <h1>
+        <section>
+          <h1>
           Welcome to <a href="https://www.linkedin.com/in/rafaelvarelati/">Rafael Varela</a> WebSite
-        </h1>
+          </h1>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        
       </main>
 
       <footer >

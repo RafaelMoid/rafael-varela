@@ -9,19 +9,22 @@ const StyledHeader = styled.header `
     padding: 0 15vw;
     height: 10vh;
     align-items: center;
-    border-bottom: 4px solid var ${terciaryColor};
+    border-bottom: 8px solid var ${terciaryColor};
 `;
 
+const StyledA = styled.a `
+    color: #ffffff;
+`;
 
 
 const Header = () => {
     return (
         <StyledHeader>
-            <a href="" rel="home">Rafael Varela</a>
+            <StyledA href="/" rel="home">Rafael Varela</StyledA>
             <nav>
-                <a href="" >About me</a>
-                <a href="" >My projects</a>
-                <a href="" >Contact me</a>
+                <StyledA href="/about" >About me</StyledA>
+                <StyledA href="/projects" >My projects</StyledA>
+                <StyledA href="/contact" >Contact me</StyledA>
             </nav>
         </StyledHeader>
     );
