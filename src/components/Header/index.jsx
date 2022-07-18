@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import { backgroundColor, terciaryColor } from "../UI/variables";
 
-const StyledHeader = styled.header`
+const StyledHeader = styled.header `
     background-color: ${backgroundColor};
     display: flex;
     justify-content: space-between;
