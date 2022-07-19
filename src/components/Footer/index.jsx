@@ -1,6 +1,9 @@
 import React from "react";
 import styled from 'styled-components';
 import { backgroundColor2 , backgroundColor3, terciaryColor } from "../UI/variables";
+import { TiSocialInstagram, TiSocialLinkedin, TiSocialGithub } from "react-icons/ti";
+
+import { IconContext } from "react-icons";
 
 const StyledFooter = styled.footer `
     background-color: ${backgroundColor3};
@@ -13,15 +16,15 @@ const StyledFooter = styled.footer `
     z-index: 9999;
 > div, nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0;
   h2 {
     font-size: 24px;
   }
       a {
+        width: 3rem;
         color: white;
-        padding-top: 0.8rem;
         display: flex;
         align-content: center;
         align-items: center;
@@ -49,17 +52,18 @@ const StyledFooter = styled.footer `
 
 const StyledA = styled.a `
     color: #ffffff;color: white;
-    padding-top: 0.8rem;
+    padding-top: 0.4rem;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     gap: 5px;
     transition: 300ms;
-    :hover {
-      color: ${terciaryColor};
-      cursor: pointer;
-justify-content: center;
+    &:hover {
+        color: ${terciaryColor};
+        cursor: pointer;
+        justify-content: center;
+        transition: 0.3s ease-out;
     }
 `;
 
@@ -67,12 +71,14 @@ justify-content: center;
 const Footer = () => {
     return (
         <StyledFooter>
-            <StyledA href="/" rel="home">Powered by Rafael Varela</StyledA>
-            <nav>
-                <StyledA href="https://www.linkedin.com/in/rafaelvarelati/" target="_blank">LinkedIn</StyledA>
-                <StyledA href="https://github.com/RafaelMoid" target="_blank" >GitHub</StyledA>
-                <StyledA href="https://www.instagram.com/rafaelmoid/" target="_blank" >Instagram</StyledA>
-            </nav>
+            <IconContext.Provider value={{ color: "white", size: "2em",  className: 'react-icons' }}> 
+                <StyledA href="/" rel="home">Powered by Rafael Varela</StyledA>
+                <nav>
+                    <StyledA href="https://www.linkedin.com/in/rafaelvarelati/" target="_blank"><TiSocialLinkedin /></StyledA>
+                    <StyledA href="https://github.com/RafaelMoid" target="_blank" ><TiSocialGithub /></StyledA>
+                    <StyledA href="https://www.instagram.com/rafaelmoid/" target="_blank" ><TiSocialInstagram /></StyledA>
+                </nav>
+            </IconContext.Provider>   
         </StyledFooter>
     );
 };

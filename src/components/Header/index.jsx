@@ -31,7 +31,8 @@ z-index: 9999;
         :hover {
           color: ${terciaryColor};
           cursor: pointer;
-  justify-content: center;
+          justify-content: center;
+          transition: 0.3s ease-out;
         }
       }
    }
@@ -57,6 +58,7 @@ const RafaelVarela = styled.a`
   justify-content: center;:hover {
     color: ${terciaryColor};
     cursor: pointer;
+    transition: 0.3s ease-out;
   }
 
   @media (min-width: 700px) {
