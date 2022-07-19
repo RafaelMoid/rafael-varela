@@ -66,6 +66,27 @@ const HeroTagLine = styled.h1 `
     margin: 0.125rem -0.125rem 0;
 `;
 
+const HeroCycle = styled.button`
+    background-image: url(https://res.cloudinary.com/jlengstorf/image/upload/q_auto,f_auto/v1593806090/jason.af/rotate-off.png);
+    border: 0;
+    color: #ffffff;
+    display: block;
+    font-size: .75rem;
+    font-variant: small-caps;
+    font-weight: 400;
+    height: 30px;
+    letter-spacing: .2em;
+    margin: 3rem auto;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 30px;
+    z-index: 20;
+    background-color: transparent;
+    background-size: contain;
+    position: relative;
+`;
+
 const Section1 = () => {
     return (
         <StyledSection>
@@ -74,6 +95,7 @@ const Section1 = () => {
                 <HeroFirstBox>Rafael</HeroFirstBox>
                 <HeroBox>Varela</HeroBox>
                 <HeroTagLine>is awesome!</HeroTagLine>
+                <HeroCycle />
             </Hero>
         </StyledSection>
     );
