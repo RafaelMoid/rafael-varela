@@ -2,7 +2,8 @@ import Head from 'next/head';
 import Header from '../src/components/Header/index';
 import Footer from '../src/components/Footer/index';
 import Section1 from '../src/components/Section1/index';
-import WhiteWaves from '../src/components/Wave/index';
+import WaveContainer from '../src/components/WaveContainer/index';
+import Wave from '../src/components/Wave/index';
 
 
 export default function Home() {
@@ -16,9 +17,11 @@ export default function Home() {
       <Header />
       <main>
         <Section1 />
-        <div>
-          <WhiteWaves />
-        </div>        
+        <WaveContainer>
+          <Wave />
+          <Wave />
+          <Wave />
+        </WaveContainer>       
         <section></section>
         <section></section>
         <section></section>

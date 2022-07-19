@@ -1,9 +1,9 @@
-import { WaveContainer } from './style';
+import { Container } from './style';
 
-const WhiteWaves = () => {
+const Wave = () => {
     return (
-        <WaveContainer />
+        <Container />
     );
 };
 
-export default WhiteWaves;
+export default Wave;
