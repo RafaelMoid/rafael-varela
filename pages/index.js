@@ -16,13 +16,14 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <Section1 />
-        <WaveContainer>
-          <Wave />
-          <Wave />
-          <Wave />
-        </WaveContainer>       
-        <section></section>
+        <Section1 />      
+        <section>
+          <WaveContainer>
+            <Wave />
+            <Wave />
+            <Wave />
+          </WaveContainer>
+        </section>
         <section></section>
         <section></section>
         
