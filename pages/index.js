@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Header from '../src/components/Header/index';
 import Footer from '../src/components/Footer/index';
+import Section1 from '../src/components/Section1/index';
 
 
 export default function Home() {
@@ -14,11 +14,7 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <section>
-          <h1>
-          Welcome to <a href="https://www.linkedin.com/in/rafaelvarelati/">Rafael Varela</a> WebSite
-          </h1>
-        </section>
+        <Section1 />
         <section></section>
         <section></section>
         <section></section>

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import { backgroundColor3, terciaryColor } from "../UI/variables";
+import { backgroundColor2 , backgroundColor3 } from "../UI/variables";
 
 const StyledFooter = styled.footer `
     background-color: ${backgroundColor3};
@@ -9,7 +9,7 @@ const StyledFooter = styled.footer `
     padding: 0 15vw;
     height: 10vh;
     align-items: center;
-    border-top: 8px solid var ${terciaryColor};
+    border-top: 4px solid ${backgroundColor2};
 `;
 
 const StyledA = styled.a `
