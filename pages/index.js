@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '../src/components/Header/index';
 import Footer from '../src/components/Footer/index';
 import Section1 from '../src/components/Section1/index';
+import PurpleWaves from '../src/components/PurpleWaves/index';
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <main>
         <Section1 />
+        <PurpleWaves />
         <section></section>
         <section></section>
         <section></section>
