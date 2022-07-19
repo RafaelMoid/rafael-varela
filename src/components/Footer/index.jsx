@@ -1,19 +1,66 @@
 import React from "react";
 import styled from 'styled-components';
-import { backgroundColor2 , backgroundColor3 } from "../UI/variables";
+import { backgroundColor2 , backgroundColor3, terciaryColor } from "../UI/variables";
 
 const StyledFooter = styled.footer `
     background-color: ${backgroundColor3};
-    display: flex;
+    display: block;
     justify-content: space-between;
     padding: 0 15vw;
-    height: 10vh;
+    height: 5rem;
     align-items: center;
     border-top: 4px solid ${backgroundColor2};
+    z-index: 9999;
+> div, nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  h2 {
+    font-size: 24px;
+  }
+      a {
+        color: white;
+        padding-top: 0.8rem;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        transition: 300ms;
+        :hover {
+          color: ${terciaryColor};
+          cursor: pointer;
+  justify-content: center;
+        }
+      }
+   }
+}
+@media (min-width: 700px) {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+  a {
+    margin: 0 0.5rem 0 0.5rem;
+  }
+}
 `;
 
 const StyledA = styled.a `
-    color: #ffffff;
+    color: #ffffff;color: white;
+    padding-top: 0.8rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: 300ms;
+    :hover {
+      color: ${terciaryColor};
+      cursor: pointer;
+justify-content: center;
+    }
 `;
 
 
