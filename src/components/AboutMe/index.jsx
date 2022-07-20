@@ -20,9 +20,8 @@ const FlexBox = styled.section`
 const ButtonDiv = styled.div`
     display: flex;
     flex-direction: row;
-    @media (min-width: 700px) {
-        justify-content: right;        
-    }
+    justify-content: right;        
+    
     
 `;
 
@@ -32,8 +31,8 @@ const HorizontalDiv = styled.div`
     gap: 15px;
     @media (min-width: 700px) {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: flex-end;
+        align-items: flex-end;
         gap: 30px;
         width: 100%;
 }       
@@ -42,7 +41,6 @@ const HorizontalDiv = styled.div`
 
 const VerticalDiv = styled.div`
     margin: 0 0.5rem 0 0.5rem;
-    justify-content: center;
     display: flex;
     flex-direction: column;
 `;
@@ -55,6 +53,8 @@ const VerticalDiv2 = styled.div`
     flex-direction: column;@media (min-width: 700px) {
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
         justify-content: space-between;
         gap: 30px;
         width: 50%;
@@ -81,7 +81,14 @@ const StyledH1 = styled.h1`
 const StyledH2 = styled.h2`
     font-size: 1rem;
     @media (min-width: 700px) {
-        font-size: 2rem;
+        font-size: 2rem;display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 30px;
+        width: 80%;
+        flex-wrap: wrap;
     }
 `;
 
@@ -105,7 +112,7 @@ const StyledSpan = styled.span`
 
     @media (min-width: 700px) {
         font-size: 1.4rem;
-        width: 80%;
+        width: 40%;
     }
 `;
 
@@ -119,11 +126,13 @@ const StyledSpan2 = styled.span`
     @media (min-width: 700px) {
         font-size: 1.4rem;
         width: 80%;
-        justify-content: right;        
+        justify-content: right;
+        flex-wrap: wrap;        
     }
 `;
 
 const FotoPerfil = styled.img`
+    display: flex;
     margin: 0 0.5rem 0 0.5rem;
     border-radius: 10rem;
     width: 8rem;
@@ -131,7 +140,9 @@ const FotoPerfil = styled.img`
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     @media (min-width: 700px) {
         border-radius: 20rem;
-        width: 10rem;
+        width: 12rem;
+        justify-content: flex-end;
+        align-items: flex-end;
       }
 `;
 
