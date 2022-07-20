@@ -10,14 +10,25 @@ const StyledSection = styled.section `
     // border-bottom: 4px solid ${primaryColor} !important;
 `;
 
+// const BackgroundConfig = styled.div`
+//     background-image: url("./bg-star.gif");
+//     background-size: 150%;
+//     background-position: center top;
+//     background-repeat: no-repeat;
+//     background-color: transparent;
+//     opacity: 0.04;
+//     z-index: -999;
+// `;
+
 const StyledCanvas = styled.canvas`
     height: 100%;
-    left: 0;
-    mix-blend-mode: overlay;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+    background-image: url("./bg-star.gif");
+    background-size: 150%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    opacity: 0.04;
+    z-index: -1;
 `;
 
 const Hero = styled.h1 `
@@ -34,6 +45,8 @@ const Hero = styled.h1 `
     font-size: 2.25rem;
     font-weight: 900;
     line-height: 2.25rem;
+    
+
 `;
 
 const HeroFirstBox = styled.h1`
@@ -41,6 +54,12 @@ const HeroFirstBox = styled.h1`
     font-size: min(4.88rem);
     line-height: .8;
     margin-right: 0.18rem;
+    
+    @media (min-width: 700px) {
+        font-size: 8rem;
+        margin: 0 auto;
+        margin-right: 0.3rem;
+      }
     `;
 
 const HeroBox = styled.h1 `
@@ -52,6 +71,11 @@ const HeroBox = styled.h1 `
     padding: 0 0.5rem;
     display: inline-block;
     transition: 200ms background linear;
+
+    @media (min-width: 700px) {
+        font-size: 7.5rem;
+        margin: 0 auto;
+      }
 `;
 
 const HeroTagLine = styled.h1 `
@@ -64,6 +88,12 @@ const HeroTagLine = styled.h1 `
     font-size: min(2.9rem);
     line-height: .85;
     margin: 0.125rem -0.125rem 0;
+        
+    @media (min-width: 700px) {
+        font-size: 4.73rem;
+        margin: 0 auto;
+        line-height: 0.95;
+      }
 `;
 
 const HeroCycle = styled.button`
@@ -90,13 +120,12 @@ const HeroCycle = styled.button`
 const Section1 = () => {
     return (
         <StyledSection>
-            {/* <StyledCanvas /> */}
-            <Hero>
-                <HeroFirstBox>Rafael</HeroFirstBox>
-                <HeroBox>Varela</HeroBox>
-                <HeroTagLine>is awesome!</HeroTagLine>
-                <HeroCycle />
-            </Hero>
+                <Hero>
+                    <HeroFirstBox>Rafael</HeroFirstBox>
+                    <HeroBox>Varela</HeroBox>
+                    <HeroTagLine>is awesome!</HeroTagLine>
+                    <HeroCycle />
+                </Hero>
         </StyledSection>
     );
 };

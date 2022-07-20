@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '../src/components/Header/index';
 import Footer from '../src/components/Footer/index';
 import Section1 from '../src/components/Section1/index';
+import AboutMe from '../src/components/AboutMe/index';
 import WaveContainer from '../src/components/WaveContainer/index';
 import Wave from '../src/components/Wave/index';
 
@@ -24,6 +25,7 @@ export default function Home() {
             <Wave />
           </WaveContainer>
         </section>
+        <AboutMe />
         <section></section>
         <section></section>
         
