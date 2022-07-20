@@ -33,7 +33,6 @@ const HorizontalDiv = styled.div`
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        gap: 30px;
         width: 100%;
 }       
     
@@ -56,7 +55,6 @@ const VerticalDiv2 = styled.div`
         justify-content: flex-end;
         align-items: flex-end;
         justify-content: space-between;
-        gap: 30px;
         width: 50%;
     }
      
@@ -133,7 +131,6 @@ const StyledSpan2 = styled.span`
 
 const FotoPerfil = styled.img`
     display: flex;
-    margin: 0 0.5rem 0 0.5rem;
     border-radius: 10rem;
     width: 8rem;
     aspect-ratio: 1 / 1;
@@ -186,17 +183,17 @@ const AboutMe = () => {
     return (
         <FlexBox>
             <VerticalDiv>
-                <FirstFrase>Hi there, i'm</FirstFrase>
+                <FirstFrase>Hi there, i am</FirstFrase>
                 <StyledH1>Rafael Varela</StyledH1>
                 <SecondFrase>frontend developer</SecondFrase>
-                <StyledSpan>I'm a frontend developer web developer, based em Pernambuco, Brazil.</StyledSpan>
+                <StyledSpan>I am a frontend developer web developer, based em Pernambuco, Brazil.</StyledSpan>
             </VerticalDiv>
             <VerticalDiv2>
                 <HorizontalDiv>
                         <FotoPerfil src="./rafael.png"/>
                         <VerticalDiv2>
-                            <StyledH2>Tecnology, games and music</StyledH2>
-                            <StyledSpan2>I'm started my journey as developer back to 2020 and since there i keep improoving myself continuosly, see more<a href=""> about me</a>.</StyledSpan2>
+                            <StyledH2>Tecnology, games, music and family.'</StyledH2>
+                            <StyledSpan2>I am started my journey as developer back to 2020 and since there i keep improoving myself continuosly, see more<a href=""> about me</a>.</StyledSpan2>
                         </VerticalDiv2>
                 </HorizontalDiv>
                 <ButtonDiv>
