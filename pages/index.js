@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <main>
         <Section1 />      
-        <section>
+        <section id="wave1">
           <WaveContainer />
         </section>
         <AboutMe />

@@ -192,7 +192,7 @@ const AboutMe = () => {
                 <HorizontalDiv>
                         <FotoPerfil src="./rafael.png"/>
                         <VerticalDiv2>
-                            <StyledH2>Tecnology, games, music and family.'</StyledH2>
+                            <StyledH2>Tecnology, games, music and family</StyledH2>
                             <StyledSpan2>I am started my journey as developer back to 2020 and since there i keep improoving myself continuosly, see more<a href=""> about me</a>.</StyledSpan2>
                         </VerticalDiv2>
                 </HorizontalDiv>
