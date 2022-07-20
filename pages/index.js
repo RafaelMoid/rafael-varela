@@ -4,8 +4,6 @@ import Footer from '../src/components/Footer/index';
 import Section1 from '../src/components/Section1/index';
 import AboutMe from '../src/components/AboutMe/index';
 import WaveContainer from '../src/components/WaveContainer/index';
-import Wave from '../src/components/Wave/index';
-
 
 export default function Home() {
   return (
@@ -19,11 +17,7 @@ export default function Home() {
       <main>
         <Section1 />      
         <section>
-          <WaveContainer>
-            <Wave />
-            <Wave />
-            <Wave />
-          </WaveContainer>
+          <WaveContainer />
         </section>
         <AboutMe />
         <section></section>
